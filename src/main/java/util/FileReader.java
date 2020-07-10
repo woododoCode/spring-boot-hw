@@ -2,7 +2,7 @@ package util;
 
 import java.util.List;
 
-public interface CsvFileReader {
+public interface FileReader {
 
     List<String> readFile(String path);
 }

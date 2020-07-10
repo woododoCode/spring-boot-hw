@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 @Slf4j
 @Component
-public class CsvFileReaderImpl implements CsvFileReader {
+public class FileReaderImpl implements FileReader {
 
     @Override
     public List<String> readFile(String path) {
