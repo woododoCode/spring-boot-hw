@@ -10,6 +10,10 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import lombok.Cleanup;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
+import java.util.stream.Collectors;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
@@ -18,6 +22,7 @@ import org.springframework.stereotype.Component;
 public class FileReaderImpl implements FileReader {
 
     @Override
+
     public String readFile(String path) {
         try {
             URI resource = Objects.requireNonNull(FileReaderImpl.class
